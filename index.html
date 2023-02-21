@@ -17,7 +17,16 @@ void setup() {
 }
 
 void draw() {
- 
+  background(0);
+  imageMode(CENTER);
+  push();
+  translate(width/2, height/2);
+  scale(0.5);
+  image(img, 0, 0);
+  pop();
+}
+copy
+
  
   int wave1 = int(map(sin(radians(frameCount*0.76)),-1,1,0,width));
   int wave2 = int(map(sin(radians(frameCount)),-1,1,0,width));
